@@ -1,17 +1,23 @@
-"use strict";
-console.log("Задание 2");
+'use strict'
+console.log('Задание 2')
 
-const calculateEngravingPrice=function (message, pricePerWord) {
-    const a=message.split(' ');
-    const numberWords=a.length;
-    const totalPrice=numberWords*pricePerWord;
-    console.log(totalPrice);
+const calculateEngravingPrice = function (message, pricePerWord) {
+  const a = message.split(' ')
+  const numberWords = a.length
+  const totalPrice = numberWords * pricePerWord
+  return totalPrice
 }
-calculateEngravingPrice(
-    'Proin sociis natoque et magnis parturient montes mus',10);
-calculateEngravingPrice(
-    'Proin sociis natoque et magnis parturient montes mus',20);
-calculateEngravingPrice(
-    'Donec orci lectus aliquam est magnis',40);
-calculateEngravingPrice(
-    'Donec orci lectus aliquam est magnis',20);
+console.log(
+  calculateEngravingPrice(
+    'Proin sociis natoque et magnis parturient montes mus',
+    10,
+  ),
+)
+console.log(
+  calculateEngravingPrice(
+    'Proin sociis natoque et magnis parturient montes mus',
+    20,
+  ),
+)
+console.log(calculateEngravingPrice('Donec orci lectus aliquam est magnis', 40))
+console.log(calculateEngravingPrice('Donec orci lectus aliquam est magnis', 20))
