@@ -2,15 +2,14 @@
 console.log('Задание 4')
 
 const formatString = (string) => {
-  const lengthString = string.length
   let newString
-  if (lengthString > 40) {
-    const tempString = string.slice(0, 40)
-    newString = tempString + '...'
+  if (string.length > 40) {
+    newString = string.slice(0, 40) + '...'
   } else {
     newString = string
   }
   console.log(newString)
+  return newString
 }
 formatString('Curabitur ligula sapien, tincidunt non.')
 formatString('Vestibulum facilisis, purus nec pulvinar iaculis.')

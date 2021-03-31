@@ -4,8 +4,7 @@ console.log('Задание 7')
 const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123']
 
 const isLoginValid = (login) => {
-  const length = login.length
-  return length >= 4 && length <= 16
+  return login.length >= 4 && login.length <= 16
 }
 
 const isLoginUnique = (allLogins, login) => {
